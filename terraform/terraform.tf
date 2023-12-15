@@ -27,8 +27,8 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "gitopsterrastate"
-    key    = "terraform.tfstate"   #keep this name ,if we dont give ths name github will create this file locally and the person having the
+    bucket = "vprofile-bucket02"
+    key    = "terraform.tfstate" #keep this name ,if we dont give ths name github will create this file locally and the person having the
     #same code will not have this .tfstate file.
     #infra will be created with the code but we dont have this .tfstate file and when we run this code again,again it will create infra.
     region = "us-east-2"
